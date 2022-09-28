@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CMS</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+			crossorigin="anonymous" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<script
+			src="https://kit.fontawesome.com/a8199a168e.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="panel">
+			<div class="row m-0 h-100">
+				<div class="panel-left col-2">
+					<div
+						class="timeData d-flex flex-column justify-content-center align-items-center">
+						<p class="calendar day text-light">Środa</p>
+						<p class="time text-light">12:00</p>
+						<p class="date text-light text-muted">26/09/2022</p>
+					</div>
+					<div class="menu">
+						<div class="container menuBox mainPage text-center">
+							<a href="index.html" class="text-decoration-none">
+								<i class="fa-solid fa-sliders text-light"></i>
+								<p class="description text-light">strona główna</p>
+							</a>
+						</div>
+						<div class="container menuBox post text-center active">
+							<a href="posts.html" class="text-decoration-none">
+								<i class="fa-regular fa-comments text-light"></i>
+								<p class="description text-light">posty</p>
+							</a>
+						</div>
+						<div class="container menuBox users text-center">
+							<a href="users.html" class="text-decoration-none">
+								<i class="fa-solid fa-users text-light"></i>
+								<p class="description text-light">użytkownicy</p>
+							</a>
+						</div>
+					</div>
+					<div class="footer">
+						<p class="footer text-light text-center">Diamond CMS</p>
+						<p class="copyright text-light text-muted text-center">
+							&copy; Copyright 2022
+						</p>
+					</div>
+				</div>
+				<div class="panel-right col-10 p-0 text-light text-center posts">
+					<section class="info-top my-4 pt-5">
+						<h1>posty</h1>
+					</section>
+					<section class="py-5">
+						<h3 class="mb-4">wyróżnione posty</h3>
+						<div class="row m-0">
+							<div
+								class="col card bg-transparent m-3 p-3 border-white featured-post">
+								<div class="card-body">
+									<p class="card-title mb-0">Temat</p>
+									<p class="text-muted">#nazwa-tematu</p>
+									<p class="card-text">
+										<strong>Treść:</strong>Lorem ipsum dolor sit amet
+										consectetur adipisicing elit. Sint labore illo quibusdam.
+									</p>
+									<button
+										class="btn btn-outline-light"
+										data-bs-toggle="modal"
+										data-bs-target="#exampleModal">
+										Zobacz post
+									</button>
+								</div>
+							</div>
+							<div
+								class="col card bg-transparent m-3 p-3 border-white featured-post">
+								<div class="card-body">
+									<p class="card-title mb-0">Temat</p>
+									<p class="text-muted">#nazwa-tematu</p>
+									<p class="card-text">
+										<strong>Treść:</strong>Lorem ipsum dolor sit amet
+										consectetur adipisicing elit. Sint labore illo quibusdam.
+									</p>
+									<button
+										class="btn btn-outline-light"
+										data-bs-toggle="modal"
+										data-bs-target="#exampleModal">
+										Zobacz post
+									</button>
+								</div>
+							</div>
+							<div
+								class="col card bg-transparent m-3 p-3 border-white featured-post">
+								<div class="card-body">
+									<p class="card-title mb-0">Temat</p>
+									<p class="text-muted">#nazwa-tematu</p>
+									<p class="card-text">
+										<strong>Treść:</strong>Lorem ipsum dolor sit amet
+										consectetur adipisicing elit. Sint labore illo quibusdam.
+									</p>
+									<button
+										class="btn btn-outline-light"
+										data-bs-toggle="modal"
+										data-bs-target="#exampleModal">
+										Zobacz post
+									</button>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="py-5 px-4">
+						<h3 class="mb-4">najaktywniejsi użytkownicy</h3>
+						<div class="row">
+							<div class="col p-3">
+								<div class="photo user-one"></div>
+								<div class="photo-details d-flex justify-content-between">
+									<p>#nazwa-użytkownika</p>
+									<button class="btn btn-outline-light text-end">
+										Pokaż profil
+									</button>
+								</div>
+							</div>
+							<div class="col p-3">
+								<div class="photo user-two"></div>
+								<div class="photo-details d-flex justify-content-between">
+									<p>#nazwa-użytkownika</p>
+									<button class="btn btn-outline-light">Pokaż profil</button>
+								</div>
+							</div>
+							<div class="col p-3">
+								<div class="photo user-three"></div>
+								<div class="photo-details d-flex justify-content-between">
+									<p>#nazwa-użytkownika</p>
+									<button class="btn btn-outline-light">Pokaż profil</button>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="py-5 px-4 border-top">
+						<h3>znajdź post</h3>
+						<p class="mb-5">
+							Wybierz kategorię, wpisz tekst i wciśnij przycisk "Szukaj".
+						</p>
+						<div class="input-group mb-3">
+							<button
+								class="btn btn-outline-secondary dropdown-toggle text-light"
+								type="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Szukaj po
+							</button>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="#">Nazwie użytkownika</a>
+								</li>
+								<li><a class="dropdown-item" href="#">Nazwie tematu</a></li>
+								<li>
+									<a class="dropdown-item" href="#">Słowach kluczowyche</a>
+								</li>
+							</ul>
+							<input
+								type="text"
+								class="form-control"
+								aria-label="Text input with dropdown button" />
+							<button class="btn btn-outline-light">Szukaj</button>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div
+			class="modal fade posts-modal"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<h3>Temat:</h3>
+						<p>Nazwa tematu</p>
+						<h3>Treść:</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+							odio?
+						</p>
+						<h3>Opcje:</h3>
+						<div>
+							<button class="btn btn-outline-success">
+								<i class="far fa-edit me-2"></i>edytuj
+							</button>
+							<button class="btn btn-outline-danger">
+								<i class="far fa-trash-alt me-2"></i>usuń
+							</button>
+							<button class="btn btn-outline-info">
+								<i class="fas fa-link me-2"></i>pokaż w temacie
+							</button>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal">
+							Zamknij
+						</button>
+						<button type="button" class="btn btn-primary">Zapisz zmiany</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+			crossorigin="anonymous"></script>
+	</body>
+</html>

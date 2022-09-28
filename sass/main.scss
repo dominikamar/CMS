@@ -1,0 +1,319 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	min-width: 1600px;
+	font-family: "Montserrat", sans-serif;
+	background-color: #181d23;
+	overflow: scroll;
+}
+.panel {
+	width: 1600px;
+	height: 1000px;
+	border: 1px solid #4b5769;
+	border-radius: 15px;
+	overflow: hidden;
+
+	.panel-left {
+		background-color: #4b5769;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.panel-right {
+		background-image: linear-gradient(
+			180deg,
+			rgba(55, 64, 76, 1) 0%,
+			rgba(21, 26, 32, 1) 100%
+		);
+		h1 {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 3rem;
+		}
+
+		h3 {
+			padding-bottom: 20px;
+			font-size: 2rem;
+			text-transform: uppercase;
+			font-weight: bold;
+			text-align: center;
+		}
+		p {
+			font-size: 1.4rem;
+			text-align: center;
+		}
+		.border {
+			border-radius: 12px;
+		}
+	}
+}
+.menu {
+	height: 700px;
+	width: 100%;
+}
+
+.menuBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 20px;
+	border: 0.7px solid #ddd;
+	border-radius: 10px;
+	height: 210px;
+	width: 230px;
+	transition: background-image 0.3s linear;
+}
+.menuBox:hover {
+	background-image: linear-gradient(
+		160deg,
+		rgba(0, 110, 255, 0.25) 0%,
+		rgba(9, 255, 0, 0.25) 100%
+	);
+}
+.active {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+i {
+	font-size: 6rem;
+}
+.description {
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+.day {
+	font-size: 2rem;
+}
+.time {
+	font-size: 4rem;
+	font-weight: bold;
+}
+.date {
+	font-size: 2rem;
+}
+.timeData {
+	line-height: 3rem;
+	height: 160px;
+	width: 100%;
+}
+.footer {
+	font-size: 1.8rem;
+	margin-top: 10px;
+}
+
+.text-title {
+	font-size: 2.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.main-box {
+	transition: background-color 0.3s;
+}
+.main-box:hover {
+	background-color: rgba(255, 255, 255, 0.08);
+}
+.page-numbers {
+	a {
+		font-size: 1.2rem;
+		background: none;
+		color: #fff;
+		padding: 10px 20px;
+	}
+}
+.table {
+	font-size: 1.4rem;
+}
+.table-post {
+	h2 {
+		font-size: 3rem;
+		font-weight: bold;
+	}
+}
+.dropdown {
+	button {
+		font-size: 1.4rem;
+	}
+}
+.page-link:hover {
+	background-color: #4b5769;
+	color: #fff;
+}
+.heading {
+	h2 {
+		font-size: 4rem;
+		text-shadow: 0px 0px 5px white;
+	}
+	i {
+		font-size: 4rem;
+		text-shadow: 0px 0px 5px white;
+	}
+	h6 {
+		padding-top: 10px;
+		font-size: 1.8rem;
+	}
+}
+.users-gender {
+	h6 {
+		padding-top: 10px;
+		font-size: 3.6rem;
+	}
+	.fa-person {
+		font-size: 5rem;
+		text-shadow: 0px 0px 10px #09ff00;
+	}
+	.fa-person-dress {
+		font-size: 5rem;
+		text-shadow: 0px 0px 10px royalblue;
+	}
+}
+.users-number {
+	h6 {
+		font-size: 3.6rem;
+	}
+}
+.form-group {
+	font-size: 1.4rem;
+	.form-select {
+		color: #fff;
+		font-size: 1.4rem;
+	}
+	option {
+		color: #181d23;
+	}
+}
+.month-stats {
+	h4 {
+		font-size: 2rem;
+	}
+	h6 {
+		font-size: 1.6rem;
+	}
+}
+.posts {
+	h3 {
+		font-size: 2.4rem;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+.featured-post {
+	.btn {
+		font-size: 1.6rem;
+	}
+	.card-title {
+		font-size: 1.8rem;
+	}
+	.card-body {
+		font-size: 1.4rem;
+	}
+}
+.photo {
+	height: 180px;
+	width: 100%;
+	margin-bottom: 15px;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.6;
+	transition: opacity 0.3s, transform 0.3s;
+}
+.photo-details {
+	button {
+		font-size: 1.4rem;
+	}
+}
+
+.photo:hover {
+	opacity: 1;
+	transform: scale(1.1);
+}
+.user-one {
+	background-image: url(../img/beautiful-2576845_640.jpg);
+}
+.user-two {
+	background-image: url(../img/building-2665811_640.jpg);
+}
+.user-three {
+	background-image: url(../img/from-the-sky-fall-2036457_640.jpg);
+}
+.first-user {
+	display: inline-flex;
+	justify-content: space-between;
+}
+.posts-modal {
+	h3 {
+		font-size: 1.7rem;
+		font-weight: bold;
+	}
+	p {
+		font-size: 1.3rem;
+	}
+	.btn {
+		font-size: 1.3rem;
+	}
+	.modal-body {
+		i {
+			font-size: 1.3rem;
+		}
+		.btn {
+			text-transform: uppercase;
+		}
+	}
+}
+.list-group {
+	li {
+		padding: 0.5em 1em;
+		margin: 0.2em 0;
+		font-size: 2rem;
+	}
+}
+.list-group-item {
+	border: 1px solid white;
+	.btn {
+		font-size: 1.6rem;
+	}
+}
+
+.heading-users {
+	margin-top: 60px;
+	h2 {
+		font-size: 3.6rem;
+		text-shadow: 0px 0px 5px white;
+	}
+	i {
+		font-size: 3.6rem;
+		text-shadow: 0px 0px 5px white;
+	}
+}
+.form-group-users {
+	label {
+		font-size: 1.6rem;
+		padding-top: 20px;
+		padding-bottom: 5px;
+	}
+}
+.form-buttons {
+	padding-top: 20px;
+	button {
+		font-size: 2rem;
+		padding: 10px;
+		margin-left: 20px;
+	}
+}
+.input-group {
+	button {
+		font-size: 1.6rem;
+	}
+}
